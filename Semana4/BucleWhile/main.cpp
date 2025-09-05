@@ -1,7 +1,6 @@
 #include <iostream>
 
 using namespace std;
-
 int main()
 {
     /**
@@ -14,16 +13,17 @@ int main()
             Instruccion n
     * }
     */
+    /**
     //imprime del 1 al 9
     int i = 0;
     while (i < 10) {
-        cout << i << endl;
+            cout << i << endl;
         i = i + 1;
     }
     // imprime del 9 al 1
     int j = 9;
     while (j>= 1) {
-        cout<< j << endl;
+            cout<< j << endl;
         i = i - 1;
     }
     //multiplos de 3 menores que 100
