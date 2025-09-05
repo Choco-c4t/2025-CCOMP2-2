@@ -22,21 +22,31 @@ int main()
     /**
     * Que solicite un numero por teclado e imprima los numeros primos menores que dicho numero
     **/
-    int n;
-    int i = 1;
-    int d = 0;
-    int f = 0;
-    cout << "Ingrese un numero: ";
-    cin >> n;
-    while (f != n ){
-        while ( i <= n ){
-        if (n % i == 0){
-            d= d + 2;
+    int limite;
+
+    cout << "Ingresa un numero: ";
+    cin >> limite;
+
+    int i = 2;
+
+    while (i <= limite) {
+        int j = 1;
+        int divisores = 0;
+
+        while (j <= i) {
+            if (i % j == 0) {
+                divisores = divisores + 1;
+            }
+            j = j + 1;
         }
-        i = i + 2;
-    } cout << i;
-    f = f + 1;
+
+        if (divisores == 2) {
+            cout << i << " ";
+        }
+
+        i = i + 1;
     }
 
+    cout << endl;
     return 0;
 }
