@@ -7,6 +7,7 @@ int main()
     /**
     *Implemento un programa que solicite un numero por teclado e indique si dicho numero es un "numero primo"
     */
+
     int n , i = 2 , d = 0;
     cout << "Ingrese un numero: ";
     cin >> i;
@@ -16,7 +17,7 @@ int main()
             break;
         }
         if (d>0);
-            break
+            break;
         i = i + 2;
     }
     cout <<((d==2)? "Es primo":"No es primo "); // (Condicion ? "Si se cumple : "si no se cumple
