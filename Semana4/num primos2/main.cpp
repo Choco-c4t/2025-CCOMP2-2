@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -35,6 +36,32 @@ int main()
         cout << "Es palindromo" << endl;
     else
         cout << "No es palindromo" << endl;
+
+    // Ottra forma
+
+    long numeroo;
+    cout << "Ingrese un numero";
+    cin >> numeroo;
+    long numC = numeroo;
+    long numdig = 0;
+    while ( numC > 0){
+            numC*= 10 ;
+            numdig++;
+    }
+    while( numeroo!=0){
+        int ini = numeroo / pow( 10 , numdig-1);
+        int fin = numeroo%10;
+        if (ini != fin){
+            cout<< "No es palindromo"<<endl;
+            break;
+        }
+        numeroo = (numeroo% static_cast<int>(pow( 10, numdig -1))) / 10;
+        numdig-= 2;
+        cout << fin << endl;
+        cout << ini<< endl;
+        cout<< numeroo<< endl;
+    }
+
 
 
     /**
