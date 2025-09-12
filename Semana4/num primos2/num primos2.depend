@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1743470704 source:d:\ccomp2025\2025-ccomp2-2\semana4\num primos2\main.cpp
+1757679025 source:d:\ccomp2025\2025-ccomp2-2\semana4\num primos2\main.cpp
 	<iostream>
+	<cmath>
 
 1757475044 source:c:\users\usuario\desktop\ccomp2-2\2025-ccomp2-2\semana4\num primos2\main.cpp
 	<iostream>
