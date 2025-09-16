@@ -8,3 +8,4 @@ Que le dice un perro a otro perro
 guau
 jajajajaja
 😜
+rocio te quiero mucho 🥰
