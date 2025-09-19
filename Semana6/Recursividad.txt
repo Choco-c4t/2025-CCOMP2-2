@@ -1,0 +1,71 @@
+
+/**
+*Recursividad: cuando una funcion se llama por si misma
+*
+* ej. Factorial: n!= n * (n-1)!
+*     
+* Funcion que retorne un numero factorial
+*/
+
+long long factorial (long n) {
+	/**
+	* Primero de define el caso base
+	*Posteriormente se define el paso recursivo
+	*/
+	if (n == 1) {
+		return 1;
+	} else {
+		return n * factorial (n - 1);
+}
+
+/**
+* ej. Fibonacci: fib(n) = fib (n-1) + fib (n-2)
+* Funcion que retorne una secuencia fibonacci
+*/
+
+long long fibonacci(long n) {
+	if ( n == 1){
+		return 1;
+	} else {
+		return fibonacci (n-1) + fibonacci (n -2);
+	}
+}
+
+* Funcion que cuente digitos de un numero
+
+long contardigitos (long n){
+	if (n < 10){
+		return 1;
+	}else{
+		return 1 + contardigitos(n/10);    // si n = 854 -> contardigitos(854) -> return 1 + contardigitos(85)-> 1 + contardigitos(8) ->return 1
+	}					   // 							1 +2      	<- 	1+1  		<- 1
+}
+ 
+// Funcion de forma recursiva dado un numero verificar si es capicua/ palindromo -> 1221 -> return  
+
+long long invertido( long numero){
+	long numinvertido = 0;
+	while (numero < 0){
+		numinvertido = numinvertido % 10 + numero % 10;
+		numero %= 10;
+	return numinvertido;
+
+void palindromo (long numero){
+	if (numero == invertido (numero) ){
+		return true; 
+	} else{ 
+
+
+
+
+int main(){
+	cout<<factorial (5)<< endl; 
+	cout<< fibonacci(7)<< endl; //13 
+	cout << contardigitos(854) << endl;
+	return 0;
+}
+
+*Proxima semana evaluacion en la pizarra
+ hasta paso por referencia, funciones
+
+

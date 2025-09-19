@@ -1,0 +1,42 @@
+/*
+*Arrays : un arreglo es el conjunto de elementos del mismo tipo, son almacenados en memoria de forma consecutiva
+* ej. int arr[5] =   en memoria :  |10|_|_|_|_|
+* ej. int arr[0] = 10/posiciones:    0 1 2 3 4	
+* para imprimir elementos del array: cout << arr[0]<< endl; -> 10
+* arr.size o arr.lenght no funcionan aqui 
+*/ 
+
+#include <iostream>
+using namespace std;
+
+// funcion que reciba un arreglo de enteros y su tamaño y retorne la suma de los elementos del arreglo,
+
+long suma ( int arr[], int tam){    -> int arr[] forma correcta para que una funcion reciva un arreglo
+	int sum = 0;
+	for(int i= 0, 0<tam, i++){
+		sum= sum + arr[i];
+	}
+	return sum;
+}
+
+int main(){
+	int arr[5];
+	arr[0] = 10;
+	arr[1] = 20;
+	arr[2] = 30;
+	arr[3] = 40;
+	arr[4] = 50;
+
+	cout << arr[0]<<endl;
+	cout << arr[1]<<endl;
+	cout << arr[2]<<endl;
+	cout << arr[3]<<endl;
+	cout << arr[4]<<endl;
+	
+
+	cout<< "la suma de todos los elementos es: "<< suma (arr ,5) << endl; //150
+
+
+	return 0;
+}
+		
