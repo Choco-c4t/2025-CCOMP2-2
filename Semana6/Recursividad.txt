@@ -43,25 +43,23 @@ long contardigitos (long n){
  
 // Funcion de forma recursiva dado un numero verificar si es capicua/ palindromo -> 1221 -> return  
 
-long long invertido( long numero){
-	long numinvertido = 0;
-	while (numero < 0){
-		numinvertido = numinvertido % 10 + numero % 10;
-		numero %= 10;
-	return numinvertido;
-
-void palindromo (long numero){
-	if (numero == invertido (numero) ){
-		return true; 
-	} else{ 
-
-
-
+int invertirNumero(int n, int invertido = 0) {
+    if (n == 0) 
+        return invertido;
+    return invertirNumero(n / 10, invertido * 10 + (n % 10));
+}
+bool esCapicua(int n) {
+    return n == invertirNumero(n);
+}
 
 int main(){
 	cout<<factorial (5)<< endl; 
 	cout<< fibonacci(7)<< endl; //13 
 	cout << contardigitos(854) << endl;
+    if (esCapicua(numero))
+        cout << numero << " es capicua" << endl;
+    else
+        cout << numero << " no es capicua" << endl;
 	return 0;
 }
 
