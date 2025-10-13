@@ -354,6 +354,73 @@ int main() {
     return 0;
 }
 
+//matriz con bordes de * 
+
+#include <iostream>
+#include <cstdlib>  // rand, srand
+#include <ctime>    // time
+
+using namespace std;
+
+int main() {
+    const int n = 5;
+    char matriz[n][n];
+    const int interiorSize = 9; // 3x3 interior
+    char interior[interiorSize];
+
+    srand(time(NULL));  // semilla aleatoria
+
+    // --- LLENAR MATRIZ ---
+    int k = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == 0 || i == n - 1 || j == 0 || j == n - 1) {
+                matriz[i][j] = '*';
+            } else {
+                char letra = 'a' + rand() % 26;
+                matriz[i][j] = letra;
+                interior[k++] = letra; // guardar letra interior
+            }
+        }
+    }
+
+    // --- ORDENAR INTERIOR DE Z -> A (BURBUJA) ---
+    for (int i = 0; i < interiorSize - 1; i++) {
+        for (int j = 0; j < interiorSize - i - 1; j++) {
+            if (interior[j] < interior[j + 1]) { // descendente
+                char temp = interior[j];
+                interior[j] = interior[j + 1];
+                interior[j + 1] = temp;
+            }
+        }
+    }
+
+    // --- RELLENAR MATRIZ CON INTERIOR ORDENADO FILA POR FILA ---
+    k = 0;
+    for (int i = 1; i < n - 1; i++) {
+        for (int j = 1; j < n - 1; j++) {
+            matriz[i][j] = interior[k++];
+        }
+    }
+
+    // --- IMPRIMIR MATRIZ ORDENADA ---
+    cout << "Matriz ordenada (de z a a):\n";
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cout << matriz[i][j] << ' ';
+        }
+        cout << '\n';
+    }
+
+    // --- IMPRIMIR LETRAS INTERIORES ORDENADAS ---
+    cout << "\nLetras interiores ordenadas (z->a): ";
+    for (int i = 0; i < interiorSize; i++) {
+        cout << interior[i] << ' ';
+    }
+    cout << '\n';
+
+    return 0;
+}
 
 */
 
