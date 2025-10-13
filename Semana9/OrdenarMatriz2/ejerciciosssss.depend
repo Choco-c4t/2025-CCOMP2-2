@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1760310602 source:c:\users\usuario\desktop\ccomp2-2\2025-ccomp2-2\semana9\ejerciciosssss\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	<unistd.h>
+	<termios.h>
+

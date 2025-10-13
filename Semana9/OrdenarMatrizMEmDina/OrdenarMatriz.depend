@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1760313769 source:c:\users\usuario\desktop\ccomp2-2\2025-ccomp2-2\semana9\ordenarmatriz\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

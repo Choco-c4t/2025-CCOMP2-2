@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1759156105 source:c:\users\usuario\desktop\practica calificada3\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1760356380 source:f:\ccomp2-2\2025-ccomp2-2\ejerciciosmatrices\matrizpatron2\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

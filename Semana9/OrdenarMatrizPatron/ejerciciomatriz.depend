@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1760311687 source:c:\users\usuario\desktop\ccomp2-2\2025-ccomp2-2\semana9\ejerciciomatriz\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1760357104 source:f:\ccomp2-2\2025-ccomp2-2\semana9\ordenarmatrizpatron\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
