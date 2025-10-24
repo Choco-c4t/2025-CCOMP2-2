@@ -115,34 +115,39 @@ void mergeSort(int arr[], int izq, int der) {
 // ======================
 // QUICK SORT
 // ======================
-int particion(int arr[], int bajo, int alto) {
-    int ultEleme = arr[alto];
-    int i = bajo - 1;
+void intercambiar(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
 
-    for (int j = bajo; j < alto; j++) {
-        if (arr[j] < ultEleme) {
-            i++;
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
+// "partir" el arreglo 
+int particionar(int arr[], int inicio, int fin) {
+    int pivote = arr[fin];  // elegimos el último elemento como pivote
+    int i = inicio - 1;     // índice de los elementos más pequeños
+
+    for (int j = inicio; j < fin; j++) {
+        if (arr[j] < pivote) {   // si el elemento actual es menor al pivote
+            i++;                 // movemos el índice
+            intercambiar(arr[i], arr[j]); // y lo colocamos a la izquierda
         }
     }
 
-    int temp = arr[i + 1];
-    arr[i + 1] = arr[alto];
-    arr[alto] = temp;
-    return i + 1;
+    // colocamos el pivote en su lugar correcto
+    intercambiar(arr[i + 1], arr[fin]);
+    return i + 1;  // devolvemos la posición del pivote
 }
 
-void quickSort(int arr[], int bajo, int alto) {
-    if (bajo < alto) {
-        int pi = particion(arr, bajo, alto);
-        quickSort(arr, bajo, pi - 1);
-        quickSort(arr, pi + 1, alto);
+// Función recursiva de Quick Sort 
+void quickSort(int arr[], int inicio, int fin) {
+    if (inicio < fin) {
+        int indicePivote = particionar(arr, inicio, fin); // colocamos el pivote en su lugar
+
+        // Ordenamos las dos partes
+        quickSort(arr, inicio, indicePivote - 1); // izquierda
+        quickSort(arr, indicePivote + 1, fin);    // derecha
     }
 }
-
-
 
 int main()
 {
