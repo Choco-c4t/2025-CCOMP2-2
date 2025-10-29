@@ -14,11 +14,11 @@ Punto::~Punto(int _x, int _y);
     y = _y;
 }
 
-int Punto::getX(){
+int Punto::getX() const{
     return x;
 }
 
-int Punto::getY(){
+int Punto::getY() const{
     return y;
 }
 

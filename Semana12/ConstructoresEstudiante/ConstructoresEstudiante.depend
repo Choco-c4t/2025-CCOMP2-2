@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1761744212 source:d:\ccomp2-2\2025-ccomp2-2\semana12\constructoresestudiante\main.cpp
+	<iostream>
+	"Estudiante.h"
+
+1761744192 d:\ccomp2-2\2025-ccomp2-2\semana12\constructoresestudiante\include\estudiante.h
+
+1761744245 source:d:\ccomp2-2\2025-ccomp2-2\semana12\constructoresestudiante\src\estudiante.cpp
+	<iostream>
+	"Estudiante.h"
+

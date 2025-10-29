@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1761742750 source:d:\ccomp2-2\2025-ccomp2-2\semana12\constructodestructor\src\punto.cpp
+	<iostream>
+	"Punto.h"
+
+1761742465 d:\ccomp2-2\2025-ccomp2-2\semana12\constructodestructor\include\punto.h
+
+1761742849 source:d:\ccomp2-2\2025-ccomp2-2\semana12\constructodestructor\main.cpp
+	<iostream>
+	"Punto.h"
+

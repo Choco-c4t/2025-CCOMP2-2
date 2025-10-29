@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Punto.h"
+#include "Vector.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ int main()
 
     Vector vg(p1,p2);
     vg.print();
+    cout<<"\n El modulo es: " << vg.modulo() <<endl;
     return 0;
 }
 

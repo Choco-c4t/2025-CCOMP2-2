@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1761741011 source:d:\ccomp2-2\2025-ccomp2-2\semana11\puntovectormmm\main.cpp
+	<iostream>
+	"Punto.h"
+	"Vector.h"
+
+1761740258 d:\ccomp2-2\2025-ccomp2-2\semana11\puntovectormmm\include\punto.h
+
+1761741006 d:\ccomp2-2\2025-ccomp2-2\semana11\puntovectormmm\include\vector.h
+	<cmath>
+	"Punto.h"
+

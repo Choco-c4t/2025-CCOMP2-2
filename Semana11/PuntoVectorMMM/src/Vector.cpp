@@ -2,7 +2,8 @@
 
 Vector::Vector(Punto p1, Punto p2)
 {
-    //ctor
+    ini = p1;
+    fin = p2;
 }
 
 Vector::print()
