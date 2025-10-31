@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1761914196 source:d:\ccomp2-2\2025-ccomp2-2\semana12\constructorarrays\main.cpp
+	<iostream>
+	"IntegerArray.h"
+
+1761914244 d:\ccomp2-2\2025-ccomp2-2\semana12\constructorarrays\include\integerarray.h
+	<iostream>
+
