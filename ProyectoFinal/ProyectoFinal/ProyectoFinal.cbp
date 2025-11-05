@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProyectoFinal" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProyectoFinal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProyectoFinal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Calificación.h" />
+		<Unit filename="include/CheckIn.h" />
+		<Unit filename="include/CheckOut.h" />
+		<Unit filename="include/Cliente.h" />
+		<Unit filename="include/Funcionario.h" />
+		<Unit filename="include/Hotel.h" />
+		<Unit filename="include/PagoServicio.h" />
+		<Unit filename="include/Persona.h" />
+		<Unit filename="include/Reserva.h" />
+		<Unit filename="include/Sucursal.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Calificación.cpp" />
+		<Unit filename="src/CheckIn.cpp" />
+		<Unit filename="src/CheckOut.cpp" />
+		<Unit filename="src/Cliente.cpp" />
+		<Unit filename="src/Funcionario.cpp" />
+		<Unit filename="src/Hotel.cpp" />
+		<Unit filename="src/PagoServicio.cpp" />
+		<Unit filename="src/Persona.cpp" />
+		<Unit filename="src/Reserva.cpp" />
+		<Unit filename="src/Sucursal.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

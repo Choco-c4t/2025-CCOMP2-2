@@ -5,12 +5,14 @@
 class String
 {
     public:
-        String(char *data, int size);
-        void setData (std::string valor, int indice);
-        int getData (int indice) const;
-        int getSize()const;
-        void print()const;
+        String(char *data);
+        int StringSize()const;
+        char* getData()const;
+
+        void toUpper(char *data);
+        void toLower(char *data);
         virtual ~String();
+
 
     private:
         int size;
