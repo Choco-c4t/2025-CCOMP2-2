@@ -47,9 +47,19 @@ void DinamicInteguerArray::push_back(int valor) //crear un nuevo arreglo para us
     delete[]data;
     //sexto paso
     this->data = tmp;
-
-
 }
+
+void DinamicInteguerArray::insert(int val, int pos){
+    int *tmp= new int [size+1];
+    for (int i=0; i<pos; i++){
+        tmp=this->data[i];
+    }
+    for (int i=pos; i<size; i++){
+        tmp[i+1]=this->data[i];
+    }
+}
+
+void remove
 
 DinamicInteguerArray::~DinamicInteguerArray()
 {
