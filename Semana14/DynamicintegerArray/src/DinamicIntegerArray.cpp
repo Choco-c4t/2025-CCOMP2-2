@@ -1,4 +1,9 @@
-#include "DinamicInteguerArray.h"
+#include "DinamicIntegerArray.h"
+
+
+
+//------CONSTRUCCTOR SIN PARAMETROS------
+
 
 DinamicInteguerArray::DinamicInteguerArray()
 {
@@ -6,6 +11,8 @@ DinamicInteguerArray::DinamicInteguerArray()
     this->data = new int(size);
 
 }
+
+//------CONSTRUCCTOR QUE RECIBE PARAMETROS------
 
 DinamicInteguerArray::DinamicInteguerArray(int arr[],int size)
 {
@@ -17,7 +24,22 @@ DinamicInteguerArray::DinamicInteguerArray(int arr[],int size)
 
 }
 
-int DinamicInteguerArray::getsize()
+
+//------CONSTRUCCTOR POR COPIA------
+
+DinamicIntegerArray::DinamicInteguerArray(DinamicIntegerArray &o){
+    this->size = o.size;
+    //this->data = o.data; ------> si lo ponemos asi, cuando b sale de su ambito, b pasara al destrucctor y libera la memoria del arreglo "da" lo que lo deja sin nada
+
+    //solucion: crear un nuevo puntero, para que tenga su propio espacio de memoria:
+
+    this->data = new int(size);
+    for(int i=0;i<size;i++){
+        this->data =o.data[i];
+    }
+}
+
+int DinamicInteguerArray::getsize()const
 {
     return size;
 }
@@ -50,7 +72,7 @@ void DinamicInteguerArray::push_back(int valor) //crear un nuevo arreglo para us
 }
 
 void insert(int pos){
-    int tmp = nre int[size-1];
+    int tmp = new int[size-1];
     for(int i=0; i< pos; i++){
         tmp[i]= this->data[i+1];
     }
@@ -73,9 +95,9 @@ void DinamicInteguerArray::insert(int val, int pos){
     }
 }
 
-void remove
 
 DinamicInteguerArray::~DinamicInteguerArray()
 {
     delete[] data;
 }
+
